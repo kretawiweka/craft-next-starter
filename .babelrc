@@ -1,3 +1,33 @@
 {
-  "presets": ["next/babel"]
+  "env": {
+    "development": {
+      "compact": false,
+      "plugins": [["inline-dotenv"], ["styled-components", { "ssr": true }]]
+    },
+    "production": {
+      "compact": false
+    }
+  },
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "#pages": "./pages",
+          "#components": "./src/components",
+          "#constants": "./src/constants",
+          "#libraries": "./src/libraries",
+          "#services": "./src/services",
+          "#stacks": "./src/stacks",
+          "#interfaces": "./src/interfaces",
+          "#styles": "./src/styles",
+          "#types": "./src/types",
+          "#locale": "./src/locale"
+        },
+        "extensions": [".wasm", ".mjs", ".js", ".jsx", ".json", ".ts", ".tsx"]
+      }
+    ]
+  ]
 }

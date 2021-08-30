@@ -1,18 +1,7 @@
-import Link from 'next/link'
+import Index from '#services/index/index'
 
-export default function Home() {
-  return (
-    <ul>
-      <li>
-        <Link href="/a" as="/a">
-          <a>a</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/b" as="/b">
-          <a>b</a>
-        </Link>
-      </li>
-    </ul>
-  )
+const IndexPage = (): JSX.Element => {
+  return <Index />
 }
+
+export default IndexPage

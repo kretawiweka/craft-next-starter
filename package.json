@@ -1,15 +1,31 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nodemon",
+    "start": "nodemon",
+    "start:prod": "cross-env NODE_ENV=production node dist/index.js",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/index.js"
+    "build:next": "next build",
+    "scriptlint": "prettier --write .",
+    "stylelint": "stylelint '{public/styles, public/styles/**/**}/**/*.{css,scss,sass}' --fix",
+    "format": "(yarn scriptlint; yarn stylelint)"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "(yarn scriptlint; yarn stylelint)"
+    }
   },
   "dependencies": {
+    "@types/react-typist": "^2.0.2",
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-styled-components": "^1.13.2",
     "cross-env": "^7.0.2",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-typist": "^2.0.5",
+    "sass": "^1.38.2",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@types/node": "^12.0.12",

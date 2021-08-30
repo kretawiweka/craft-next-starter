@@ -19,7 +19,15 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "#pages/*": ["./pages/*"],
+      "#components/*": ["./src/components/*"],
+      "#constants/*": ["./src/constants/*"],
+      "#libraries/*": ["./src/libraries/*"],
+      "#services/*": ["./src/services/*"],
+      "#interfaces/*": ["./src/interfaces/*"]
+    }
   },
   "exclude": ["dist", ".next", "out", "next.config.js"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
