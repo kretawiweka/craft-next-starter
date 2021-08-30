@@ -1,4 +1,4 @@
-import Hero from './Hero'
-import CoupleProfile from './CoupleProfile'
+import FirstComponent from './FirstComponent'
+import SecondComponent from './SecondComponent'
 
-export { Hero, CoupleProfile }
+export { FirstComponent, SecondComponent }

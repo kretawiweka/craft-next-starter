@@ -19,18 +19,18 @@ interface META_PROPS_TYPES {
 }
 
 const META_PROPS: META_PROPS_TYPES = {
-  pageTitle: 'Dita & Eka Wedding',
-  pageDescription: `Wedding website of Anindita & Kretawiweka`,
-  image_icon: `/static/images/anka-logo.png`,
+  pageTitle: 'Page Title',
+  pageDescription: `Page Description`,
+  image_icon: `/static/images/nextjs-logo.png`,
   og: {
-    url: `https://anka.kretawiweka.site`,
+    url: `http://localhost:3000`,
     type: 'website',
-    image: `/static/images/anka-logo.png`,
-    title: 'Dita & Eka Wedding',
-    description: `Wedding website of Anindita & Kretawiweka`,
+    image: `/static/images/nextjs-logo.png`,
+    title: 'OG Title',
+    description: `OG Description`,
   },
   manifest: {
-    url: `https://anka.kretawiweka.site/manifest.json`,
+    url: `http://localhost:3000/manifest.json`,
   },
 }
 export default META_PROPS

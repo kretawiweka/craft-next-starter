@@ -1,0 +1,11 @@
+.first-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+  padding: 0 1em;
+  img {
+    width: 480px;
+    max-width: 100%;
+  }
+}

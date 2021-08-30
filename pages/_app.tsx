@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Meta from '#components/common/Meta'
 import '../public/styles/application.scss'
 
-const AnkaApp = ({ Component, pageProps }: AppProps) => {
+const CraftApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Fragment>
       <Meta />
@@ -12,4 +12,4 @@ const AnkaApp = ({ Component, pageProps }: AppProps) => {
   )
 }
 
-export default AnkaApp
+export default CraftApp
